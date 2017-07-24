@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/m_main_fw_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/m_main_sy_btn_false"
+            style="@style/fragment_tab_item_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom1_tab_false"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/m_main_sy_btn_true"
+            style="@style/fragment_tab_item_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom1_tab_true"
+            android:text="首页" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/m_main_sj_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/m_main_gj_btn_false"
+            style="@style/fragment_tab_item_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom2_tab_false"
+            android:text="管家" />
+
+        <Button
+            android:id="@+id/m_main_gj_btn_true"
+            style="@style/fragment_tab_item_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom2_tab_true"
+            android:text="管家" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/m_main_gz_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/m_main_sh_btn_false"
+            style="@style/fragment_tab_item_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom3_tab_false"
+            android:text="生活" />
+
+        <Button
+            android:id="@+id/m_main_sh_btn_true"
+            style="@style/fragment_tab_item_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom3_tab_true"
+            android:text="生活" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/m_main_lxr_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/m_main_fx_btn_false"
+            style="@style/fragment_tab_item_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom4_tab_false"
+            android:text="发现" />
+
+        <Button
+            android:id="@+id/m_main_fx_btn_true"
+            style="@style/fragment_tab_item_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom4_tab_true"
+            android:text="发现" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/m_main_wd_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/m_main_wd_btn_false"
+            style="@style/fragment_tab_item_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom5_tab_false"
+            android:text="我的" />
+
+        <Button
+            android:id="@+id/m_main_wd_btn_true"
+            style="@style/fragment_tab_item_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom5_tab_true"
+            android:text="我的" />
+    </FrameLayout>
+</LinearLayout>
