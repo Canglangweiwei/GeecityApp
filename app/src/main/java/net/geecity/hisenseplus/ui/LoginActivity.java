@@ -23,7 +23,6 @@ import net.geecity.hisenseplus.util.Validator;
 import javax.inject.Inject;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.functions.Action1;
 
@@ -49,11 +48,6 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     @Override
     protected int initContentView() {
         return R.layout.activity_login;
-    }
-
-    @Override
-    protected void bindButterKnife() {
-        ButterKnife.bind(this);
     }
 
     @Override
@@ -157,7 +151,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         presenter.detachView();
+        super.onDestroy();
     }
 }

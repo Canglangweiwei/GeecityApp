@@ -34,7 +34,7 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Inject
-    LoginStore newsStore;
+    LoginStore loginStore;
 
     @Inject
     public LoginPresenter(Validator validator) {
@@ -43,7 +43,7 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void login(String username, String password) {
-        mSubscription = newsStore.userLogin(username, password)
+        mSubscription = loginStore.userLogin(username, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<LoginResultBean>() {

@@ -154,26 +154,4 @@ public class UserBean {
     public void setQgzk(String qgzk) {
         this.qgzk = qgzk;
     }
-
-    @Override
-    public String toString() {
-        return "UserBean{" +
-                "id=" + id +
-                ", Account='" + Account + '\'' +
-                ", password='" + password + '\'' +
-                ", Types=" + Types +
-                ", NAME='" + NAME + '\'' +
-                ", NickName='" + NickName + '\'' +
-                ", TEL='" + TEL + '\'' +
-                ", R_id='" + R_id + '\'' +
-                ", U_id=" + U_id +
-                ", AccountCount=" + AccountCount +
-                ", sex='" + sex + '\'' +
-                ", Photo='" + Photo + '\'' +
-                ", gxqm='" + gxqm + '\'' +
-                ", xqah='" + xqah + '\'' +
-                ", qgzk='" + qgzk + '\'' +
-                ", jifen=" + jifen +
-                '}';
-    }
 }

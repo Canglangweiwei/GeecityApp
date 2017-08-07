@@ -10,7 +10,6 @@ import net.geecity.hisenseplus.R;
 import net.geecity.hisenseplus.app.AppComponent;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 /**
  * <p>
@@ -28,11 +27,6 @@ public class MineDetailActivity extends BaseActivity {
     @Override
     protected int initContentView() {
         return R.layout.activity_mine_detail;
-    }
-
-    @Override
-    protected void bindButterKnife() {
-        ButterKnife.bind(this);
     }
 
     @Override

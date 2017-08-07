@@ -20,8 +20,6 @@ import net.geecity.hisenseplus.util.Validator;
 
 import javax.inject.Inject;
 
-import butterknife.ButterKnife;
-
 /**
  * 欢迎页
  */
@@ -35,11 +33,6 @@ public class WelcomeActivity extends BaseActivity implements LoginContract.View 
     @Override
     protected int initContentView() {
         return R.layout.activity_welcome;
-    }
-
-    @Override
-    protected void bindButterKnife() {
-        ButterKnife.bind(this);
     }
 
     @Override
@@ -130,7 +123,7 @@ public class WelcomeActivity extends BaseActivity implements LoginContract.View 
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         presenter.detachView();
+        super.onDestroy();
     }
 }

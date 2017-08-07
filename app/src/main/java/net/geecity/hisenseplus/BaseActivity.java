@@ -2,7 +2,6 @@ package net.geecity.hisenseplus;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
@@ -16,16 +15,17 @@ import android.widget.Toast;
 import net.geecity.hisenseplus.app.AppComponent;
 import net.geecity.hisenseplus.ui.DaggerApplication;
 
+import butterknife.ButterKnife;
+
 @SuppressWarnings("ALL")
 public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         DaggerApplication.get(getApplicationContext()).pushActivityToStack(this);
         setContentView(initContentView());
-        bindButterKnife();
+        ButterKnife.bind(this);
         setupComponent(DaggerApplication.get(this).component());
         initUi();
         initDatas();
@@ -36,11 +36,6 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 页面绑定
      */
     protected abstract int initContentView();
-
-    /**
-     * 绑定ButterKnife
-     */
-    protected abstract void bindButterKnife();
 
     /**
      * 初始化UI
@@ -63,6 +58,12 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param component AppComponent
      */
     protected abstract void setupComponent(AppComponent component);
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+    }
 
     /**
      * 启动新一个activity

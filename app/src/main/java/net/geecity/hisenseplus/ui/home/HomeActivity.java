@@ -19,7 +19,6 @@ import net.geecity.hisenseplus.ui.manager.GuanJiaFragment;
 import net.geecity.hisenseplus.ui.mine.MineFragment;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -50,11 +49,6 @@ public class HomeActivity extends BaseActivity {
     @Override
     protected int initContentView() {
         return R.layout.activity_home;
-    }
-
-    @Override
-    protected void bindButterKnife() {
-        ButterKnife.bind(this);
     }
 
     @Override

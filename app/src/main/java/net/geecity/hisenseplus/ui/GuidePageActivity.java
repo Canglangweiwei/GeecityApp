@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -43,11 +42,6 @@ public class GuidePageActivity extends BaseActivity {
     @Override
     protected int initContentView() {
         return R.layout.activity_guide_page;
-    }
-
-    @Override
-    protected void bindButterKnife() {
-        ButterKnife.bind(this);
     }
 
     @Override

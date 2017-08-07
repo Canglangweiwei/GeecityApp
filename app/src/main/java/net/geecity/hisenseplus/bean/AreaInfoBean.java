@@ -61,15 +61,4 @@ public class AreaInfoBean implements Serializable {
     public void setDoorshow(String doorshow) {
         this.doorshow = doorshow;
     }
-
-    @Override
-    public String toString() {
-        return "AreaInfoBean{" +
-                "A_id='" + A_id + '\'' +
-                ", A_name='" + A_name + '\'' +
-                ", findShow='" + findShow + '\'' +
-                ", doorshow='" + doorshow + '\'' +
-                ", isDefault=" + isDefault +
-                '}';
-    }
 }
